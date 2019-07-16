@@ -8,8 +8,8 @@ public interface ControleRemoto {
     public int consultarVolume();
     public void aumentarCanal();
     public void diminuirCanal();
-    public void trocarCanal();    
-    public void consultarCanal(int);
+    public void trocarCanal(int canal);    
+    public int consultarCanal();
 
     
 }

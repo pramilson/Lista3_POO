@@ -4,24 +4,48 @@ public class Televisao implements ControleRemoto{
     private int canal;
 
     public Televisao(){
-        this canal = 0;
+        this canal = 1;
         this volume = 0;
     }
 
     public void aumentarVolume(){
-        if(volume<100)
-            volume++;
+        if(this.volume<100)
+            this.volume++;
         else
             System.out.println("Volume está no máximo");
     }
 
     public void diminuirVolume(){
-        if(volume>0)
-            volume--;
+        if(this.volume>0)
+            this.volume--;
         else
             System.out.println("Volume está no mínimo")
     }
 
+    public int consultarVolume(){
+        return this.volume;
+    }
     
+    public void aumentarCanal(){
+        if(this.canal!=50)
+            this.canal++;
+        else    
+            this.canal = 1;
+    }
+
+    public void diminuirCanal(){
+        if(this.canal!=1)
+            this.canal--;
+        else    
+            this.canal = 50;
+    }
+
+    public int consultarCanal(){
+        return this.canal;
+    }
+
+    public void trocarCanal(int canal){
+        this.canal = canal;
+    }
 
 }
