@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ListaInteiros",
+            "request": "launch",
+            "mainClass": "ListaInteiros"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Lista",
+            "request": "launch",
+            "mainClass": "Lista"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main"
+        }
+    ]
+}

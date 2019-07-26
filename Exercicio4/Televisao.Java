@@ -4,8 +4,8 @@ public class Televisao implements ControleRemoto{
     private int canal;
 
     public Televisao(){
-        this canal = 1;
-        this volume = 0;
+        this.canal = 1;
+        this.volume = 0;
     }
 
     public void aumentarVolume(){
@@ -19,7 +19,7 @@ public class Televisao implements ControleRemoto{
         if(this.volume>0)
             this.volume--;
         else
-            System.out.println("Volume está no mínimo")
+            System.out.println("Volume está no mínimo");
     }
 
     public int consultarVolume(){
